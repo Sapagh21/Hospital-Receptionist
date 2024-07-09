@@ -8,10 +8,32 @@ web-based hospital reception system designed to facilitate the workflow for rece
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) 
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ## Features
-- Admit new patients
-- Assign a room & a doctor to a patient
-- Update Patient's information
-- Search for a Patient by **Patient's Name**, **Room Number**, **National ID**, **Patient ID**.
+### Patient Management
+- Add a new patient
+- Remove a patient
+- Update patient information
+- View detailed patient page
+- Search for a patient
+
+### Medical Record Management
+- Write medical records
+- Update medical records
+- View detailed medical records
+
+### Room and Doctor Assignment
+- Assign a room to a patient
+- Assign a supervising doctor
+
+### Search and Track
+- Search for patients by ID, name, national ID, or room number
+
+
+## System Design
+| | |
+|---|---|
+|Use Case Diagram|  ![usecase](docs/diagrams/usecase.jpg)  |
+|Enitiy Relation Diagram (ERD)|  ![ERD](docs/diagrams/ERD.jpg)  |
+|ERD mapping |  ![mapping](docs/diagrams/erd_mapping.jpg)  |
 ## UI Screenshots
 
 | Screenshot                | Description                |
@@ -28,13 +50,22 @@ web-based hospital reception system designed to facilitate the workflow for rece
 
 ## Getting Started
 ### Dependencies
-Make sure you have `PHP` 8.1 or higher installed on your machine.
+Make sure you have `PHP` 8.1 or higher and XAMPP installed on your machine.
 
 1. Clone the repository 
 ```shell
-git clone https://github.com/Sapagh21/Pharmacy-Management-system.git
+git clone https://github.com/Sapagh21/Hospital-Receptionist.git
  ``` 
 2. Navigate to the project's directory
 ```shell
-cd .\Pharmacy-Management-system\
+cd .\Hospital-Receptionist\
 ```
+3. go to `php my admin` 
+4. Create a database `hospital`
+5. import the database<br>
+*You can find the project's database in `db/hospital.sql`*
+
+
+## [Demo Video](https://drive.google.com/file/d/1969O045KKaAkSYlbFNgAIsbZl5XFJcrK/view?usp=sharing)
+
+![](https://gifdb.com/images/high/cool-spongebob-see-you-soon-ng0xqp61o7ll454c.gif)
